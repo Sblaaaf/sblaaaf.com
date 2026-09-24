@@ -14,8 +14,6 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // Self-contained server bundle, used by the production Docker image.
-  output: "standalone",
   poweredByHeader: false,
   experimental: {
     // Only ship the Drei helpers we actually import.

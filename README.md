@@ -5,18 +5,19 @@ Portfolio de Renaud Lourgouilloux (sblaaaf) : Next.js 16 (App Router), React Thr
 ## Lancer le projet
 
 ```bash
-# Docker, dev avec hot reload
-docker compose --profile dev up dev
-
-# Docker, image de production
-docker compose up --build web
-
-# Sans Docker (Node 22+)
+# Node 22+
 npm install
-npm run dev
+npm run dev   # http://localhost:3000
 ```
 
-Variables d'environnement : voir `.env.example`.
+Variables d'environnement : voir `.env.example` (toutes optionnelles).
+
+## Déploiement
+
+Hébergé sur Vercel, connecté au dépôt GitHub :
+
+- chaque push sur une branche crée un **Preview Deployment** (URL unique) ;
+- chaque push sur la branche de production (`main`) met à jour le site en ligne.
 
 ## Scripts
 
